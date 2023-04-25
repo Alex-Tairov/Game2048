@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoseForm));
             this.label1 = new System.Windows.Forms.Label();
             this.loseScoreLabel = new System.Windows.Forms.Label();
             this.loseQuitButton = new System.Windows.Forms.Button();
@@ -90,6 +91,7 @@
             this.Controls.Add(this.loseQuitButton);
             this.Controls.Add(this.loseScoreLabel);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LoseForm";
             this.Text = "LoseForm";
             this.Load += new System.EventHandler(this.LoseForm_Load);

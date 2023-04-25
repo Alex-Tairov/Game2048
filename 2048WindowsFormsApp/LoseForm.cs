@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _2048_Common;
+using System;
 using System.Windows.Forms;
 
 namespace _2048WindowsFormsApp
@@ -7,7 +8,10 @@ namespace _2048WindowsFormsApp
     public partial class LoseForm : Form
     {
         private Form1 form;
-        
+
+        public UserName user;
+
+        private Game game;
 
         public LoseForm(Form1 form)
         {
@@ -19,7 +23,8 @@ namespace _2048WindowsFormsApp
 
         private void loseQuitButton_Click(object sender, EventArgs e)
         {
-            form.Close();
+            var userResultsForm = new UserResultsForm(UserResults.GetResultsFromFile());
+            userResultsForm.Show();
         }
 
         private void LoseForm_Load(object sender, EventArgs e)

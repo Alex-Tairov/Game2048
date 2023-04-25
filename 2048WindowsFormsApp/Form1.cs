@@ -548,6 +548,18 @@ namespace _2048WindowsFormsApp
             }
         }
 
+        public void NewGame()
+        {
+            var userInfoForm = new UserInfoForm();
+            if (userInfoForm.ShowDialog(this) == DialogResult.OK)
+            {
+                var userName = userInfoForm.userNameTextBox.Text;//Записываем имя пользователя
+                user = new UserName(userName);
+                game = new Game(user);
+                Restart();
+                GenerateNumber();
+            }
+        }
         private void openFileDialog2_FileOk(object sender, System.ComponentModel.CancelEventArgs e)
         {
 
