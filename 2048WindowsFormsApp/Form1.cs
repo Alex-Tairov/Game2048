@@ -20,6 +20,7 @@ namespace _2048WindowsFormsApp
         private bool flag = false;
 
         private List<int> numbers = new List<int> { 4, 4, 2, 2, 2, 2, 2, 2, 2, 2 };
+    
 
         internal void ClearMap()
         {
@@ -44,17 +45,20 @@ namespace _2048WindowsFormsApp
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
+
             var userInfoForm = new UserInfoForm();
             if (userInfoForm.ShowDialog(this) == DialogResult.OK)
             {
+              
                 var userName = userInfoForm.userNameTextBox.Text;//Записываем имя пользователя
                 user = new UserName(userName);
                 game = new Game(user);
-
-
                 InitMap();
                 GenerateNumber();
                 ShowScore();
+                
+                   
             }
             else
             {
@@ -96,6 +100,7 @@ namespace _2048WindowsFormsApp
             }
         }
 
+      
         public void InitMap()
         {
             map = new Label[mapSizeX, mapSizeY];//двумерный массив лейблов
@@ -107,12 +112,10 @@ namespace _2048WindowsFormsApp
                     var newLabel = CreateLabel(i, j);//Ставим лейблы
                     Controls.Add(newLabel);
                     map[i, j] = newLabel;
-
-                    
                 }
             }
         }
-                
+
 
         //Рестарт
         public void Restart()
@@ -392,14 +395,7 @@ namespace _2048WindowsFormsApp
             ShowScore();
                         
         }
-
-        //Задаем размеры поля
-        private void SetSizeFieldToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            var SetSizeForm = new SetSizeField(this);
-            SetSizeForm.Show();
-        }
-
+                
         //Отображаем результаты
         private void ShowResultsToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -534,13 +530,7 @@ namespace _2048WindowsFormsApp
         {
             Close();
         }
-        //Кнопка Рестарт
-        private void RestartToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Restart();
-        }
-
-        
+               
         private void newGameToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var userInfoForm = new UserInfoForm();

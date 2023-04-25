@@ -34,8 +34,6 @@
             this.менюToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.правилаИгрыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.рестартToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.задатьРазмерыПоляToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.отобразитьРезультатыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
@@ -80,8 +78,6 @@
             this.менюToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.правилаИгрыToolStripMenuItem,
             this.newGameToolStripMenuItem,
-            this.рестартToolStripMenuItem,
-            this.задатьРазмерыПоляToolStripMenuItem,
             this.отобразитьРезультатыToolStripMenuItem,
             this.выходToolStripMenuItem});
             this.менюToolStripMenuItem.Name = "менюToolStripMenuItem";
@@ -101,20 +97,6 @@
             this.newGameToolStripMenuItem.Size = new System.Drawing.Size(256, 26);
             this.newGameToolStripMenuItem.Text = "Новая игра";
             this.newGameToolStripMenuItem.Click += new System.EventHandler(this.newGameToolStripMenuItem_Click);
-            // 
-            // рестартToolStripMenuItem
-            // 
-            this.рестартToolStripMenuItem.Name = "рестартToolStripMenuItem";
-            this.рестартToolStripMenuItem.Size = new System.Drawing.Size(256, 26);
-            this.рестартToolStripMenuItem.Text = "Рестарт";
-            this.рестартToolStripMenuItem.Click += new System.EventHandler(this.RestartToolStripMenuItem_Click);
-            // 
-            // задатьРазмерыПоляToolStripMenuItem
-            // 
-            this.задатьРазмерыПоляToolStripMenuItem.Name = "задатьРазмерыПоляToolStripMenuItem";
-            this.задатьРазмерыПоляToolStripMenuItem.Size = new System.Drawing.Size(256, 26);
-            this.задатьРазмерыПоляToolStripMenuItem.Text = "Задать размеры поля";
-            this.задатьРазмерыПоляToolStripMenuItem.Click += new System.EventHandler(this.SetSizeFieldToolStripMenuItem_Click);
             // 
             // отобразитьРезультатыToolStripMenuItem
             // 
@@ -168,11 +150,9 @@
         private System.Windows.Forms.Label scoreLabel;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem менюToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem задатьРазмерыПоляToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem отобразитьРезультатыToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem правилаИгрыToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem выходToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem рестартToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem newGameToolStripMenuItem;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.OpenFileDialog openFileDialog2;
