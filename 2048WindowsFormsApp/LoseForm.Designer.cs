@@ -114,8 +114,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LoseForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "LoseForm";
-           // this.Load += new System.EventHandler(this.LoseForm_Load);
+            this.Text = "2048";
             this.ResumeLayout(false);
             this.PerformLayout();
 
