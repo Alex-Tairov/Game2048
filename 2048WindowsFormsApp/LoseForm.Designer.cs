@@ -115,7 +115,7 @@
             this.Name = "LoseForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoseForm";
-            this.Load += new System.EventHandler(this.LoseForm_Load);
+           // this.Load += new System.EventHandler(this.LoseForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
