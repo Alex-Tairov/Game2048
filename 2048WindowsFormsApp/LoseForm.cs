@@ -31,5 +31,16 @@ namespace _2048WindowsFormsApp
         {
 
         }
+
+        private void NewGameButton_Click(object sender, EventArgs e)
+        {
+            var userInfoForm = new UserInfoForm();
+            if (userInfoForm.ShowDialog(this) == DialogResult.OK)
+            {
+                var userName = userInfoForm.userNameTextBox.Text;//Записываем имя пользователя
+                user = new UserName(userName);
+                game = new Game(user);
+            }
+        }
     }
 }

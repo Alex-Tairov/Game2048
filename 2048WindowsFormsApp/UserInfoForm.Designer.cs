@@ -61,7 +61,7 @@
             this.okButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.okButton.Location = new System.Drawing.Point(36, 154);
             this.okButton.Name = "okButton";
-            this.okButton.Size = new System.Drawing.Size(75, 33);
+            this.okButton.Size = new System.Drawing.Size(83, 33);
             this.okButton.TabIndex = 2;
             this.okButton.Text = "ОК";
             this.okButton.UseVisualStyleBackColor = false;
@@ -73,7 +73,7 @@
             this.cancelButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.cancelButton.Location = new System.Drawing.Point(233, 154);
             this.cancelButton.Name = "cancelButton";
-            this.cancelButton.Size = new System.Drawing.Size(75, 33);
+            this.cancelButton.Size = new System.Drawing.Size(88, 33);
             this.cancelButton.TabIndex = 3;
             this.cancelButton.Text = "Отмена";
             this.cancelButton.UseVisualStyleBackColor = false;
@@ -90,6 +90,7 @@
             this.Controls.Add(this.userNamelabel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "UserInfoForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "2048";
             this.ResumeLayout(false);
             this.PerformLayout();
